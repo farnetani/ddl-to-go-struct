@@ -81,6 +81,9 @@ npm install -g yo generator-code
 yo code
 ```
 
+## Version
+`V0.0.4`
+
 ## License
 
 This project is a copy of the extension: DDLG2GS [https://github.com/Wandecilenio/DDL2GS](https://github.com/Wandecilenio/DDL2GS) with customizations made by me to accept varchar and uuid fields for the my private use. I'm not responsible for any bugs/problems.
