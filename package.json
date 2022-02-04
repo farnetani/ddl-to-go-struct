@@ -1,0 +1,58 @@
+{
+	"name": "ddl-to-go-struct",
+	"displayName": "DDL To Go Struct",
+	"publisher": "farnetani",
+	"description": "Convert the DDL (sql) instructions to Go Struct",
+	"version": "0.0.4",
+	"icon": "icon.png",
+	"engines": {
+		"vscode": "^1.36.0"
+	},
+	"categories": [
+		"Other",
+		"Formatters"
+	],
+	"activationEvents": [
+		"onCommand:extension.ddl-to-go-struct"
+	],
+	"main": "./extension.js",
+	"author": {
+		"name": "Arlei Ferreira Farnetani Junior",
+		"email": "farnetani@gmail.com",
+		"url": "https://farnetani.github.io/"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/farnetani/ddl-to-go-struct.git"
+	},
+	"contributes": {
+		"commands": [
+			{
+				"command": "extension.ddl-to-go-struct",
+				"title": "DDLTOGS: Convert the DDL (sql) instructions to Go Struct"
+			}
+		],
+		"keybindings": [
+			{
+				"command": "extension.ddl-to-go-struct",
+				"title": "%extension.ddl-to-go-struct%",
+				"key": "ctrl+shift+i",
+				"mac": "cmd+shift+i"
+			}
+		]
+	},
+	"scripts": {
+		"test": "node ./test/runTest.js"
+	},
+	"devDependencies": {
+		"@types/glob": "^7.1.1",
+		"@types/mocha": "^5.2.6",
+		"@types/node": "^10.12.21",
+		"@types/vscode": "^1.36.0",
+		"eslint": "^5.13.0",
+		"glob": "^7.1.4",
+		"mocha": "^6.1.4",
+		"typescript": "^3.3.1",
+		"vscode-test": "^1.0.2"
+	}
+}
